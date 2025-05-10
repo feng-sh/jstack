@@ -48,7 +48,8 @@ export const AnimatedList = React.memo(
     }, [index, delay, childrenArray.length]);
 
     const itemsToShow = useMemo(() => {
-      const result = childrenArray.slice(0, index + 1).reverse();
+      // 上から下へ順番に表示するため、reverseを削除
+      const result = childrenArray.slice(0, index + 1);
       return result;
     }, [index, childrenArray]);
 
