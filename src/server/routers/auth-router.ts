@@ -10,7 +10,7 @@ export const authRouter = router({
     const auth = await currentUser();
 
     if (!auth) {
-      return c.json({ isSynced: false });
+      return c.superjson({ isSynced: false });
     }
 
     const user = await db.user.findFirst({
@@ -29,6 +29,6 @@ export const authRouter = router({
       });
     }
 
-    return c.json({ isSynced: true });
+    return c.superjson({ isSynced: true });
   }),
 });

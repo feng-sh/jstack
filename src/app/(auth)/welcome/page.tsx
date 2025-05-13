@@ -6,9 +6,10 @@
 // このスタックがなぜこんなに気に入っているのかがわかるでしょう。
 
 import LoadingSpinner from "@/components/loading-spinner";
+import Heading from "@/components/heading";
 import { client } from "@/lib/client";
 import { useQuery } from "@tanstack/react-query";
-import { Heading, LucideProps } from "lucide-react";
+import { LucideProps } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
