@@ -10,6 +10,7 @@ import { format } from "date-fns/format";
 import { ArrowRight, BarChart2, Clock, Database, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { DashboardEmptyState } from "./dashboard-empty-state";
 
 export const DashboardPageContent = () => {
   const [deletingCategory, setDeletingCategory] = useState<string | null>(null);
@@ -47,7 +48,7 @@ export const DashboardPageContent = () => {
   }
 
   if (!categories || categories.length === 0) {
-    return <div>empty state</div>;
+    return <DashboardEmptyState />;
   }
 
   return (
