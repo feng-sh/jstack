@@ -157,7 +157,7 @@ export const DashboardPageContent = () => {
             <Button
               variant="destructive"
               onClick={() => {
-                deletingCategory && deleteCategory(deletingCategory!);
+                deletingCategory && deleteCategory(deletingCategory);
               }}
               disabled={isDeletingCategory}
             >
