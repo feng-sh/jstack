@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils";
 import { Clock } from "lucide-react";
 import Image from "next/image";
 
