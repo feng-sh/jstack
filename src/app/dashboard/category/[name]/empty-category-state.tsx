@@ -30,6 +30,8 @@ export const EmptyCategoryState = ({
   const hasEvents = data?.hasEvents;
 
   useEffect(() => {
+    // TODO 次の処理をコメントアウトしたら、どうなる？
+    // refresh()の時、親コンポーネントもリフレッシュされる？ログを埋めて確認すること。
     if (hasEvents) router.refresh();
   }, [hasEvents, router]);
 
